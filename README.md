@@ -328,7 +328,7 @@ Clone or download this repository.
 
 ```bash
 docker compose up --build
-
+```
 
 This will:
 
@@ -339,24 +339,25 @@ This will:
     🔗 Bind the frontend to http://localhost:3000
 
 3. Test the Application
-
+```
     🌐 Frontend UI: http://localhost:3000
 
     🧪 Backend health check: http://localhost:8080/health
-...
+```
 
 
-## 🔄 Useful Commands
-
-| Command                     | Description                    |
-| --------------------------- | ------------------------------ |
-| `docker compose up --build` | Build and start all services   |
-| `docker compose down`       | Stop and remove all containers |
-| `docker compose ps`         | List running services          |
-| `docker compose logs -f`    | Live logs                      |
+## Useful Docker Compose Commands
+````
 
 
+| Command                      | Description                     |
+|-----------------------------|---------------------------------|
+| `docker compose up --build` | Build and start all services    |
+| `docker compose down`       | Stop and remove all containers  |
+| `docker compose ps`         | List running services           |
+| `docker compose logs -f`    | Live logs                       |
 
+`````
 
 ## 📄 Project Structure
 
