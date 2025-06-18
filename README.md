@@ -220,6 +220,51 @@ kubectl logs -n items-app -l app=items-frontend
 kubectl port-forward -n items-app service/frontend-service 3000:3000
 kubectl port-forward -n items-app service/backend-service 8080:8080
 ```
+## 🐋 Container Images
+#Frontend image:
+```
+docker pull ghcr.io/karimovic007/distributed-systems-lab/distributed-systems-lab-backend:latest
+````
+#Backend image:
+````
+docker pull ghcr.io/karimovic007/distributed-systems-lab/distributed-systems-lab-backend:latest
+````
+Clone or download this repository.
+
+## ✅ 2. Run with Docker Compose
+
+```bash
+docker compose up --build
+```
+
+This will:
+
+    ✅ Build and start both the backend and frontend containers
+
+    🔗 Bind the backend to http://localhost:8080
+
+    🔗 Bind the frontend to http://localhost:3000
+
+3. Test the Application
+```
+    🌐 Frontend UI: http://localhost:3000
+
+    🧪 Backend health check: http://localhost:8080/health
+```
+
+
+## Useful Docker Compose Commands
+````
+
+
+| Command                      | Description                     |
+|-----------------------------|---------------------------------|
+| `docker compose up --build` | Build and start all services    |
+| `docker compose down`       | Stop and remove all containers  |
+| `docker compose ps`         | List running services           |
+| `docker compose logs -f`    | Live logs                       |
+
+`````
 
 ## 📚 API Documentation
 
@@ -298,51 +343,7 @@ pytest
 3. **Edit Item**: Click "Edit" on any item
 4. **Delete Item**: Click "Delete" to remove an item
 
-## 🐋 Container Images
-#Frontend image:
-```
-docker pull ghcr.io/karimovic007/distributed-systems-lab/distributed-systems-lab-backend:latest
-````
-#Backend image:
-````
-docker pull ghcr.io/karimovic007/distributed-systems-lab/distributed-systems-lab-backend:latest
-````
-Clone or download this repository.
 
-## ✅ 2. Run with Docker Compose
-
-```bash
-docker compose up --build
-```
-
-This will:
-
-    ✅ Build and start both the backend and frontend containers
-
-    🔗 Bind the backend to http://localhost:8080
-
-    🔗 Bind the frontend to http://localhost:3000
-
-3. Test the Application
-```
-    🌐 Frontend UI: http://localhost:3000
-
-    🧪 Backend health check: http://localhost:8080/health
-```
-
-
-## Useful Docker Compose Commands
-````
-
-
-| Command                      | Description                     |
-|-----------------------------|---------------------------------|
-| `docker compose up --build` | Build and start all services    |
-| `docker compose down`       | Stop and remove all containers  |
-| `docker compose ps`         | List running services           |
-| `docker compose logs -f`    | Live logs                       |
-
-`````
 
 ## 📄 Project Structure
 
