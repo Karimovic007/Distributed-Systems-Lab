@@ -167,32 +167,9 @@ yarn dev
 ```
 
 5. **Access frontend**
+````
 - Application: http://localhost:3000
-
-## 🐳 Docker Deployment
-
-### Build Images
-
-```bash
-# Build backend image
-docker build -t items-backend:latest ./backend
-
-# Build frontend image
-docker build -t items-frontend:latest ./nuxt-app
-```
-
-### Run with Docker Compose
-
-```bash
-# Start all services
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop services
-docker-compose down
-```
+````
 
 ### Environment Variables
 
