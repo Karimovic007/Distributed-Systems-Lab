@@ -322,6 +322,14 @@ pytest
 4. **Delete Item**: Click "Delete" to remove an item
 
 ## 🐋 Container Images
+#Frontend image:
+```
+docker pull ghcr.io/karimovic007/distributed-systems-lab/distributed-systems-lab-backend:latest
+````
+#Backend image:
+````
+docker pull ghcr.io/karimovic007/distributed-systems-lab/distributed-systems-lab-backend:latest
+````
 Clone or download this repository.
 
 ## ✅ 2. Run with Docker Compose
