@@ -322,11 +322,41 @@ pytest
 4. **Delete Item**: Click "Delete" to remove an item
 
 ## 🐋 Container Images
+Clone or download this repository.
 
-Public container images are available on Docker Hub:
+## ✅ 2. Run with Docker Compose
 
-- **Frontend**: 
-- **Backend**: 
+```bash
+docker compose up --build
+
+
+This will:
+
+    ✅ Build and start both the backend and frontend containers
+
+    🔗 Bind the backend to http://localhost:8080
+
+    🔗 Bind the frontend to http://localhost:3000
+
+3. Test the Application
+
+    🌐 Frontend UI: http://localhost:3000
+
+    🧪 Backend health check: http://localhost:8080/health
+...
+
+
+## 🔄 Useful Commands
+
+| Command                     | Description                    |
+| --------------------------- | ------------------------------ |
+| `docker compose up --build` | Build and start all services   |
+| `docker compose down`       | Stop and remove all containers |
+| `docker compose ps`         | List running services          |
+| `docker compose logs -f`    | Live logs                      |
+
+
+
 
 ## 📄 Project Structure
 
